@@ -106,7 +106,7 @@ color:#a1c5d1 ;
   font-weight: 500;
 }
 
-/* About section styling */
+/* About section*/
 section{
   padding: 100px 0;
 }
@@ -195,12 +195,6 @@ width: 45%;
     }
 
 /* services section */
-.services .max-width{
-
-}
-
-
-
 .services .services-content{ 
   display: flex;
   align-items: center;
@@ -303,18 +297,15 @@ margin-bottom: 35px;
 }  
 .skills{
   color: white;
+  text-align: center;
   font-family: 'Poppins',sans-serif;
   background:var(--dark_blue);
 }
 
-
-  body{
+body{
   color: var(--dark_blue);
   width: 100%;    
   }
-
-  
-
 
   /* contact me section */
     .contacts .title::after{
