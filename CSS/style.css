@@ -82,7 +82,7 @@
 
 .home {
     display: flex;
-    background-color: var(--semon);
+    /* background-color: var(--semon); */
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh; */
@@ -175,6 +175,8 @@ section {
     font-weight: 600;
     padding-left: 70px;
     padding-right: 70px;
+    color: black;
+
     justify-content: center;
 }
 
@@ -252,7 +254,7 @@ a {
     transition: width 500ms, height 500ms;
     cursor: pointer;
     transition: all 0.3s ease;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 5px;
     padding: 0 20px;
     display: flex;
@@ -265,8 +267,6 @@ a {
 }
 
 .services .services-content .card .box {
-    /* transition: all 0.3s ease;
-  margin: 10px; */
     border-radius: 3px;
     padding: 20px;
     width: calc(33% -10px);
