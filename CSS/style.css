@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
-@import url(partials/variables.css);
-
+@import url("assets/styles/images");
 
 :root {
-    /* --dark_blue:#122E39 ; */
     --dark_blue: #266150;
-    /* --semon:#DB9D71; */
     --semon: #FFDACC;
-    /* --baby_blue:#496169; */
     --baby_blue: #E7F3FF;
     --off_white: #FDFEFF;
 }
@@ -52,33 +48,12 @@ justify-content: space-between;
     margin-left: 25px;
 }
 
-
-
-
-
-
-/* .logo */
-/* 
-.navbar-brand {
-    padding: 0 1rem 0 2rem;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--dark_blue);
-} */
-/* 
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-} */
-
+/*---------------------------------------------------- Home section----------------------------------------------------*/
 .home {
     display: flex;
-    /* background-color: var(--semon); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
+    background: url("/Users/rotarek/rawantarek.com/assets/styles/images/background.png") no-repeat center;
+    
+    height: 100vh;
     color: white;
     min-height: 500px;
 }
@@ -149,10 +124,9 @@ section {
 }
 
 .home .img-fluid {
-    height: 360px;
-    width: 360px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
-    margin-left: 55px;
     border-radius: 6px;
 }
 
