@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
-@import url("assets/styles/images");
 
 :root {
     --dark_blue: #266150;
+    --blue:#848f8c;
     --semon: #FFDACC;
     --baby_blue: #E7F3FF;
     --off_white: #FDFEFF;
@@ -45,9 +45,18 @@ justify-content: space-between;
 .navbar .menu li a{
     text-decoration: none;
     font-size: 18px;
-
     color:var(--off_white);
     margin-left: 25px;
+}
+.navbar .menu li a:hover{
+    color:var(--blue);
+}
+
+.menu-btn{
+    color:var(--off_white);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
 /*---------------------------------------------------- Home section----------------------------------------------------*/
@@ -83,7 +92,7 @@ justify-content: space-between;
 }
 
 .home .text3 span {
-    color: var(--dark_blue);
+    color: var(--blue);
     font-weight: 500;
 }
 
@@ -317,7 +326,7 @@ body {
 
 /*---------------------------------------------------- contact me section ----------------------------------------------------*/
 
-.contats {
+.contacts {
     background-color: #FAFCFF;
 }
 
@@ -396,7 +405,7 @@ body {
 
 /* responsive media query */
 
-@media(max-width: 947px) {
+@media(max-width: 550px) {
     .max-width {
         padding: 0 50px;
     }
