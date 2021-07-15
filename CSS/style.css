@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 @import url(partials/variables.css);
 
-/* ----------------------------------------------------Home section styling---------------------------------------------------- */
 
 :root {
     /* --dark_blue:#122E39 ; */
@@ -13,22 +12,44 @@
     --off_white: #FDFEFF;
 }
 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* ----------------------------------------------------navbar styling---------------------------------------------------- */
+
+
 .navbar{
     position: fixed;
     width: 100%;
     background: var(--dark_blue);
+    padding: 15px 0;
+}
+.navbar .max-width{ 
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .navbar .logo a{
     color: var(--off_white);
     font-size: 35px;
     font-weight: 600;
+    text-decoration: none;
+
 }
 
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
 
 .navbar .menu li a{
-color:var(--off_white);
-
+    text-decoration: none;
+    font-size: 18px;
+    color:var(--off_white);
+    margin-left: 25px;
 }
 
 
@@ -37,20 +58,20 @@ color:var(--off_white);
 
 
 /* .logo */
-
+/* 
 .navbar-brand {
     padding: 0 1rem 0 2rem;
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
     font-weight: 600;
     color: var(--dark_blue);
-}
-
+} */
+/* 
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-}
+} */
 
 .home {
     display: flex;
