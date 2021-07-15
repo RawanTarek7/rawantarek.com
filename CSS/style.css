@@ -405,13 +405,13 @@ body {
 
 /* responsive media query */
 
-@media(max-width: 550px) {
+@media(max-width: 991px) {
     .max-width {
         padding: 0 50px;
     }
     .menu-button {
-        display: block;
-        z-index: 999;
+        display: inline;
+        /* z-index: 999; */
     }
     .menu-button i.active::before {
         content: "\f00d";
@@ -436,6 +436,7 @@ body {
     .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
+        color: #FAFCFF;
         font-size: 25px;
     }
 }

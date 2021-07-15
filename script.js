@@ -4,7 +4,11 @@ $(document).ready(function(){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
-
         }
-    })
-})
+    });
+
+    // toggle menu
+    $('.menu-btn').click(function(){
+            $('.navbar .menu').toggleClass("active");
+    });
+});
