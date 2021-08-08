@@ -436,7 +436,8 @@ body {
 
   .navbar .logo a {
     color: var(--off_white);
-    font-size: 24px;
+    font-size: 45px;
+    margin: auto;
     font-family: "Dancing Script", cursive;
     font-weight: 600;
     text-decoration: none;
@@ -454,7 +455,7 @@ body {
 
   .resume {
     margin-right: 20px;
-
+    margin: auto;
   }
 
   section {
@@ -464,8 +465,6 @@ body {
   .home .text {
     font-size: 18px;
     font-weight: 400;
-    padding-left: 15px;
-    padding-right: 10px;
     color: var(--dark_blue);
   }
 
@@ -534,5 +533,14 @@ body {
     margin-top: 10px;
   }
 
+
+.text2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+span{
+    font-weight: 500;
+}
 
 }
