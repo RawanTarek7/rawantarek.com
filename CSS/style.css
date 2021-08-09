@@ -39,7 +39,6 @@
 .navbar .menu li {
   list-style: none;
   display: inline-block;
- 
 }
 
 .navbar .menu li a {
@@ -200,8 +199,8 @@ a {
   /* align-items: center; */
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .services .title::after {
@@ -243,13 +242,12 @@ a {
 
 .services .services-content .card:hover .box {
   transform: scale(1.09);
-
   background: var(--dark_blue);
   color: var(--off_white);
 }
 
 .services .services-content .text {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -386,7 +384,17 @@ body {
   color: var(--dark_blue);
   font-family: "Poppins", sans-serif;
 }
-
+.books .title::after {
+  content: "__________";
+  position: absolute;
+  color: var(--dark_blue);
+  font-size: 20px;
+  font-family: cursive, sans-serif;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  transform: translateX(-50%);
+}
 .books .books-content {
   display: flex;
   justify-content: space-between;
@@ -415,15 +423,25 @@ body {
   margin-bottom: 15px;
   width: calc(33% -10px);
 }
-/*   
-  .books .books-content .card .box img{
-      width: 70px;
-      height: 90px;
-  } */
 
 .books .books-content .card:hover .box {
   transform: scale(1.05);
 }
+
+
+.quote .title::after {
+  content: "__________";
+  position: absolute;
+  color: var(--dark_blue);
+  font-size: 20px;
+  font-family: cursive, sans-serif;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  transform: translateX(-50%);
+}
+
+
 
 /* responsive media query */
 
@@ -469,8 +487,14 @@ body {
   }
 
   .home .paragraph {
-    width: 85%;
+    width: 90%;
   }
+
+
+.services .services-content .text {
+  font-size: 15px;
+  font-weight: 550;
+}
 
   footer {
     float: none;
@@ -510,8 +534,20 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .books .books-content .card {
+    transition: width 600ms, height 600ms;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 1300px;
+    margin: 10px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .home {
@@ -529,18 +565,16 @@ body {
     height: 170px;
   }
 
-  .text1{
+  .text1 {
     margin-top: 10px;
   }
 
-
-.text2 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-span{
+  .text2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  span {
     font-weight: 500;
-}
-
+  }
 }
