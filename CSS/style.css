@@ -58,7 +58,7 @@
 .home {
   display: flex;
   background: url("../assets/styles/images/background.png") no-repeat center;
-  height: 100vh;
+  height: 90vh;
   color: var(--dark_blue);
   min-height: 500px;
 }
@@ -192,10 +192,8 @@ a {
 
 .services {
   display: grid;
-  height: 100vh;
+  height: 50vh;
   color: var(--dark_blue);
-  align-items: center;
-
   font-family: "Poppins", sans-serif;
 }
 
@@ -203,6 +201,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
   margin-left: 60px;
   margin-right: 60px;
 }
