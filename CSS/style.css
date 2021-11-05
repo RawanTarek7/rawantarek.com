@@ -20,9 +20,10 @@
 }
 
 .navbar {
+  border-radius: 0;
   width: 100%;
   background: var(--dark_blue);
-  padding: 10px 0;
+  padding: 7px;
 }
 .navbar .max-width {
   display: flex;
@@ -32,7 +33,7 @@
 
 .navbar .logo a {
   color: var(--off_white);
-  font-size: 35px;
+  font-size: 55px;
   font-family: "Dancing Script", "cursive";
   font-weight: 600;
   text-decoration: none;
@@ -129,8 +130,9 @@
   position: relative;
   font-size: 40px;
   font-weight: 500;
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", "cursive";
   text-align: center;
+  margin-top: 25px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -190,38 +192,25 @@ a {
 
 .services {
   display: grid;
-  height: 50vh;
-  place-items: center;
-  text-align: center;
-
+  height: 100vh;
   color: var(--dark_blue);
+  align-items: center;
+
   font-family: "Poppins", sans-serif;
 }
 
 .services .services-content {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 60px;
   margin-right: 60px;
 }
 
-.services .title::after {
-  content: "__________";
-  position: absolute;
-  color: var(--dark_blue);
-  font-size: 20px;
-  font-family: cursive, sans-serif;
-  bottom: -5px;
-  left: 50%;
-  padding: 5px;
-  transform: translateX(-50%);
-}
-
 .services .services-content .card i {
-  font-size: 22px;
-  margin-bottom: 7px;
+  font-size: 35px;
+  margin: 25px;
+  align-items: center;
 }
 
 .services .services-content .card {
@@ -237,15 +226,17 @@ a {
 }
 
 .services .services-content .card .box {
-  border-radius: 3px;
+  border-radius: 6px;
+  height: 130px;
   padding: 15px;
   color: var(--dark_blue);
+
   background: var(--baby_blue);
   width: calc(33% -15px);
 }
 
 .services .services-content .card:hover .box {
-  transform: scale(1.09);
+  transform: scale(1.19);
   background: var(--dark_blue);
   color: var(--off_white);
 }
@@ -261,10 +252,14 @@ a {
   margin: 10px;
 }
 
+.skills-content {
+  padding: 25px;
+}
+
 .skills .desc {
   font-size: 25px;
   text-align: center;
-  margin: 35px;
+  margin: 45px;
 }
 
 .skills .title::after {
@@ -295,8 +290,8 @@ body {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  width: 360px;
-  height: 400px;
+  width: 400px;
+  height: 410px;
   margin: auto;
 }
 
@@ -308,6 +303,8 @@ body {
 
 .contacts {
   background-color: #fafcff;
+  height: 40vh;
+  padding-top: 35px;
 }
 
 .contacts .title::after {
@@ -325,6 +322,7 @@ body {
 .contacts .contacts-content {
   text-align: center;
   width: 100%;
+  padding-top: 80px;
 }
 
 .contacts .contacts-content a {
@@ -388,6 +386,7 @@ body {
   color: var(--dark_blue);
   font-family: "Poppins", sans-serif;
 }
+
 .books .title::after {
   content: "__________";
   position: absolute;
@@ -408,7 +407,7 @@ body {
 }
 
 .books .books-content .card {
-  transition: width 600ms, height 600ms;
+  transition: width 800ms, height 800ms;
   cursor: pointer;
   transition: all 0.3s ease;
   max-width: 1300px;
@@ -429,7 +428,15 @@ body {
 }
 
 .books .books-content .card:hover .box {
-  transform: scale(1.05);
+  transform: scale(1.04);
+}
+.quote {
+  margin: 35px;
+  padding: 35px;
+}
+
+.blockquote p {
+  font-size: 25px;
 }
 
 .quote .title::after {
@@ -444,13 +451,26 @@ body {
   transform: translateX(-50%);
 }
 
-/* responsive media query start */
+.quote-content {
+  padding: 50px;
+  align-items: center;
+  text-align: center;
+}
+
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
   }
 
-
+  .services .services-content .card .box {
+    border-radius: 6px;
+    height: 90px;
+    width: 330px;
+    padding: 15px;
+    color: var(--dark_blue);
+    background: var(--baby_blue);
+    width: calc(33% -15px);
+  }
 }
 
 @media (max-width: 690px) {
@@ -460,6 +480,7 @@ body {
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
@@ -470,20 +491,27 @@ body {
     width: 100%;
   }
 
-
   .services .services-content .text {
     font-size: 17px;
     font-weight: 550;
   }
-
 }
 
-/* responsive media query */
 @media (max-width: 500px) {
   .navbar {
     background: var(--dark_blue);
     padding: 10px 0;
     justify-content: space-between;
+  }
+
+  .services .services-content .card .box {
+    border-radius: 6px;
+    height: 90px;
+    width: 330px;
+    padding: 15px;
+    color: var(--dark_blue);
+    background: var(--baby_blue);
+    width: calc(33% -15px);
   }
 
   .navbar .logo a {
@@ -507,7 +535,7 @@ body {
 
   .resume {
     margin-right: 20px;
-    margin: auto;
+    /* margin: auto; */
   }
 
   section {
