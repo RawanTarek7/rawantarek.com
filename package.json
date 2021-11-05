@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "my personal website",
   "main": "script.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RawanTarek7/rawantarek.com/issues"
   },
-  "homepage": "https://github.com/RawanTarek7/rawantarek.com#readme"
+  "homepage": "https://github.com/RawanTarek7/rawantarek.com#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
 }
