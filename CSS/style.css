@@ -14,7 +14,7 @@
   margin: auto;
 }
 
-/* ----------------------------------------------------navbar styling---------------------------------------------------- */
+/* ---------------------navbar styling---------------------------- */
 
 .navbar {
   border-radius: 0;
@@ -115,7 +115,7 @@
   color: var(--dark_blue);
 }
 
-/*---------------------------------------------------- About section----------------------------------------------------*/
+/*------------------------- About section-----------------------------------------*/
 
 .about {
   font-family: "Poppins", sans-serif;
@@ -187,21 +187,7 @@ a {
   color: var(--blue);
 }
 
-/* ----------------------------------------------------services section---------------------------------------------------- */
-/* 
-
-.services .services-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-
-
- */
+/* -------------------services section----------------------------- */
 
 .services {
   display: grid;
@@ -209,6 +195,18 @@ a {
   place-items: center;
   color: var(--dark_blue);
   font-family: "Poppins", sans-serif;
+}
+
+.services .title::after {
+  content: "__________";
+  position: absolute;
+  color: var(--dark_blue);
+  font-size: 20px;
+  font-family: cursive, sans-serif;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  transform: translateX(-50%);
 }
 
 .services .services-content .card:hover .box {
@@ -239,6 +237,7 @@ a {
   color: var(--dark_blue);
   background: var(--baby_blue);
   width: calc(33% -15px);
+  text-align: center;
 }
 
 .services .services-content .card {
@@ -256,7 +255,7 @@ a {
   font-weight: 500;
 }
 
-/* ----------------------------------------------------skills section ----------------------------------------------------*/
+/* ------------------------skills section --------------------*/
 
 .skills .skills-content img {
   margin: 10px;
@@ -309,7 +308,7 @@ body {
   height: 550px;
 }
 
-/*---------------------------------------------------- contact me section ----------------------------------------------------*/
+/*----------------- contact me section ----------------------*/
 
 .contacts {
   background-color: #fafcff;
@@ -536,13 +535,14 @@ body {
 
   .services .services-content .text {
     font-size: 15px;
+    text-align: center;
     font-weight: 500;
   }
 
   .services .services-content .card i {
     font-size: 20px;
     margin: 15px;
-    align-items: center;
+    text-align: center;
   }
 
   .services .services-content .card .box {
@@ -550,6 +550,7 @@ body {
     height: 90px;
     width: 310px;
     margin: 15px;
+
     padding: 15px;
     color: var(--dark_blue);
     background: var(--baby_blue);
