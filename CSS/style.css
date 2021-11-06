@@ -188,13 +188,7 @@ a {
 }
 
 /* ----------------------------------------------------services section---------------------------------------------------- */
-
-.services {
-  display: grid;
-  height: 50vh;
-  color: var(--dark_blue);
-  font-family: "Poppins", sans-serif;
-}
+/* 
 
 .services .services-content {
   display: flex;
@@ -205,10 +199,46 @@ a {
   margin-right: 60px;
 }
 
+
+
+ */
+
+.services {
+  display: grid;
+  height: 75vh;
+  place-items: center;
+  color: var(--dark_blue);
+  font-family: "Poppins", sans-serif;
+}
+
+.services .services-content .card:hover .box {
+  transform: scale(1.19);
+  background: var(--dark_blue);
+  color: var(--off_white);
+}
+
+.services .services-content .text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .services .services-content .card i {
-  font-size: 35px;
-  margin: 25px;
+  font-size: 25px;
+  margin: 10px;
+  place-items: center;
+
   align-items: center;
+}
+
+.services .services-content .card .box {
+  border-radius: 6px;
+  height: 90px;
+  width: 310px;
+  margin: 15px;
+  padding: 15px;
+  color: var(--dark_blue);
+  background: var(--baby_blue);
+  width: calc(33% -15px);
 }
 
 .services .services-content .card {
@@ -216,26 +246,9 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
   max-width: 1300px;
-  margin: 5px;
-  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.services .services-content .card .box {
-  border-radius: 6px;
-  height: 120px;
-  padding: 15px;
-  color: var(--dark_blue);
-  background: var(--baby_blue);
-  width: calc(33% -15px);
-}
-
-.services .services-content .card:hover .box {
-  transform: scale(1.19);
-  background: var(--dark_blue);
-  color: var(--off_white);
 }
 
 .services .services-content .text {
@@ -455,53 +468,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-
-  .services .services-content .card .box {
-    border-radius: 6px;
-    height: 90px;
-    width: 330px;
-    font-size: 5px;
-    padding: 15px;
-    color: var(--dark_blue);
-    background: var(--baby_blue);
-    width: calc(33% -15px);
-  }
-}
-
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
-  }
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 32px;
-  }
-  .home .home-content a {
-    font-size: 20px;
-  }
-  .services .service-content .card {
-    width: 100%;
-  }
-
-  .services .services-content .text {
-    font-size: 17px;
-    font-weight: 550;
-  }
-
-  .services .services-content .card i {
-    font-size: 20px;
-    margin: 15px;
-    align-items: center;
-  }
-}
-
-@media (max-width: 500px) {
   .navbar {
     background: var(--dark_blue);
     padding: 10px 0;
@@ -515,21 +481,6 @@ body {
   .quote {
     margin: 5px;
     padding: 5px;
-  }
-  .services .services-content .card i {
-    font-size: 20px;
-    margin: 15px;
-    align-items: center;
-  }
-
-  .services .services-content .card .box {
-    border-radius: 6px;
-    height: 90px;
-    width: 330px;
-    padding: 15px;
-    color: var(--dark_blue);
-    background: var(--baby_blue);
-    width: calc(33% -15px);
   }
 
   .navbar .logo a {
@@ -556,7 +507,7 @@ body {
   }
 
   section {
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   .home .text {
@@ -569,9 +520,50 @@ body {
     width: 90%;
   }
 
+  .services {
+    display: grid;
+    height: 80vh;
+    place-items: center;
+    color: var(--dark_blue);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .services .services-content .card:hover .box {
+    transform: scale(1.07);
+    background: var(--dark_blue);
+    color: var(--off_white);
+  }
+
   .services .services-content .text {
     font-size: 15px;
     font-weight: 500;
+  }
+
+  .services .services-content .card i {
+    font-size: 20px;
+    margin: 15px;
+    align-items: center;
+  }
+
+  .services .services-content .card .box {
+    border-radius: 6px;
+    height: 90px;
+    width: 310px;
+    margin: 15px;
+    padding: 15px;
+    color: var(--dark_blue);
+    background: var(--baby_blue);
+    width: calc(33% -15px);
+  }
+
+  .services .services-content .card {
+    transition: width 600ms, height 600ms;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   footer {
@@ -593,14 +585,6 @@ body {
   .max-width {
     padding: 0 10px;
     margin: 5;
-  }
-
-  .services {
-    display: grid;
-    height: 80vh;
-    place-items: center;
-    color: var(--dark_blue);
-    font-family: "Poppins", sans-serif;
   }
 
   .books .books-content .card .box img {
@@ -626,12 +610,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .services .services-content .card:hover .box {
-    transform: scale(1.07);
-    background: var(--dark_blue);
-    color: var(--off_white);
   }
 
   .home {
